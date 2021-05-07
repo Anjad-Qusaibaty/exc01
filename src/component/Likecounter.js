@@ -1,5 +1,5 @@
-// src/components/LikeCounter.js
-import { useState,useEffect } from "react"; // <- note the added import of useState
+
+import { useState } from "react"; 
 
 export default function LikeCounter() {
   const initial_numLikes = 0;
@@ -16,15 +16,6 @@ export default function LikeCounter() {
   function reset(){
     set_numLikes (initial_numLikes)
   }
-  // console.log("A render!");
-
-  // useEffect(() => {
-  //   console.log("The useEffect action!");
-  // }, [numLikes]);
-
-  // useEffect(() => {
-  //   console.log("The useEffect empty dependency!");
-  // }, []);
 
 
 

@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.blocka{
+  border: 5px solid deepskyblue;
+  padding: 15px;
+  width: 50%;
+  margin: 20px auto;
+}
+.blockb{
+  border: 5px solid darkturquoise;
+  padding: 15px;
+  width: 50%;
+  margin: 20px auto;
+}
