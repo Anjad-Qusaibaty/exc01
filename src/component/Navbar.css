@@ -7,9 +7,8 @@
     justify-content: center;
     max-width: 100%;
     background-color:rgb(9, 128, 179);
-    border-top-color: rgb(0, 255, 204);
-    border-top-style: solid;
-    border-top-width: 5px;
+    border-top: 5px solid rgb(0, 255, 204);
+    border-bottom: 5px solid rgb(0, 255, 204);
     padding: 1%;
     position:static;
 }
