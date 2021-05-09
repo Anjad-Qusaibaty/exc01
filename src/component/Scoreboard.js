@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Player from "./Player"
 import Addplayer from "./AddPlayerForm"
+import Title from "./Title"
 
 /*------vvv This is for styling vvv------ */
 const styleoflist={
@@ -125,6 +126,7 @@ function aNewOne(newplayer){
 
             return (
     <div>
+        <Title/>
         <div style={listfunctions}>
             <p>Sort:</p>
             <select style={buttonsForList} onChange={change_sorting} value={sort_by}>

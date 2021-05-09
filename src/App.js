@@ -2,41 +2,28 @@ import LikeCounter from "./component/Likecounter"
 import LikeButton from "./component/LikeButton"
 import AwesomeAnimals from "./component/AwesomeAnimals"
 import ArticleList from "./component/ArticleList"
-import ARTICLELIST_USEEFFECT from "./component/ARTICLELIST_USEEFFECT"
-import Title from "./component/Title"      
+import ARTICLELIST_USEEFFECT from "./component/ARTICLELIST_USEEFFECT"   
 import Scoreboard from "./component/Scoreboard"
 import './App.css';
+import {Switch , Route} from 'react-router-dom'
+import Navbar from './component/Navbar'
+
 
 function App() {
   return (
     <div className="App">
-      <main>
-        <div className="blockb">
-        <h2>Exc06: Scoreboard</h2>
-        <Title/>
-        <Scoreboard/>
-        </div>
-        <div className="blocka">
-        <h2>Exc05: useEffect</h2>
-        <ARTICLELIST_USEEFFECT/>
-        </div>
-        <div className="blockb">
-        <h2>Exc04: Article List</h2>
-        <ArticleList/>
-        </div>
-        <div className="blocka">
-        <h2>Exc03: Map Awesome Animals</h2>
-        <AwesomeAnimals/>
-        </div>
-        <div className="blockb">
-        <h2>Exc02: Like/Unlike</h2>
-        <LikeButton/>
-        </div>
-        <div className="blocka">
-        <h2>Exc01: Plus, Minus, Reset</h2>
-        <LikeCounter/>
-        </div>
-      </main>
+      <Navbar/>
+        <Switch>
+        <Route path="/likecounter" component={LikeCounter} />
+        <Route path="/likebutton" component={LikeButton} />
+        <Route path="/awesomeanimals" component={AwesomeAnimals} />
+        <Route path="/articleslistapi" component={ARTICLELIST_USEEFFECT} />
+        <Route path="/articleslist" component={ArticleList} />
+        <Route path="/" component={Scoreboard} />
+
+        </Switch>
+
+
     </div>
   );
 }
