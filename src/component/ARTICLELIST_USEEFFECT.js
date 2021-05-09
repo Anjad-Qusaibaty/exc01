@@ -13,11 +13,11 @@ export default function ARTICLELIST_USEEFFECT() {
   const [articles, set_articles] = useState([]);
 
 async function fetchData() {
-            console.log("Gonna fetch some data!");    
+            // console.log("Gonna fetch some data!");    
     try{
     const response = await axios.get("https://jsonplaceholder.typicode.com/posts?_limit=5");
     
-    console.log("Got back:",response.data[0]);
+    // console.log("Got back:",response.data[0]);
 
     set_articles(response.data);
 
@@ -57,27 +57,4 @@ useEffect(()=>{
 }
 
 
-// export default function ArticleList() {
-//   const [articles, set_articles] = useState([]);
-
-//   async function doSomeDataFetching() {
-//     // console.log("I'm gonna fetch some data!");
-//     const response = await axios.get(
-//       "https://jsonplaceholder.typicode.com/posts?_limit=5"
-//     );
-//     set_articles(response.data);
-//     // console.log("Got back", response);
-//   }
-
-//   const clearNotifications = () => {
-//     set_articles([]);
-//   };
-
-//   const showNotifications = () => {
-//     doSomeDataFetching();
-//   };
-
-//   useEffect(() => {
-//     doSomeDataFetching();
-//   }, []);
 

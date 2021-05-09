@@ -3,14 +3,19 @@ import LikeButton from "./component/LikeButton"
 import AwesomeAnimals from "./component/AwesomeAnimals"
 import ArticleList from "./component/ArticleList"
 import ARTICLELIST_USEEFFECT from "./component/ARTICLELIST_USEEFFECT"
-      
+import Title from "./component/Title"      
+import Scoreboard from "./component/Scoreboard"
 import './App.css';
-
 
 function App() {
   return (
     <div className="App">
       <main>
+        <div className="blockb">
+        <h2>Exc06: Scoreboard</h2>
+        <Title/>
+        <Scoreboard/>
+        </div>
         <div className="blocka">
         <h2>Exc05: useEffect</h2>
         <ARTICLELIST_USEEFFECT/>
