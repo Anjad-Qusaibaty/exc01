@@ -22,6 +22,7 @@ export default function Navbar() {
 <NavLink  activeStyle ={{color:"rgb(0, 255, 204)"}} style={navbarstyle} to="/articleslistapi">Articles (API)</NavLink>
 <NavLink  activeStyle ={{color:"rgb(0, 255, 204)"}} style={navbarstyle} to="/articleslist">Articles (Local)</NavLink>
 <NavLink  activeStyle ={{color:"rgb(0, 255, 204)"}} style={navbarstyle} to="/likebutton">Like Button</NavLink>
+<NavLink  activeStyle ={{color:"rgb(0, 255, 204)"}} style={navbarstyle} to="/movies">Search Movies</NavLink>
 
     </div>
   )

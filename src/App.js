@@ -7,6 +7,8 @@ import Scoreboard from "./component/Scoreboard"
 import './App.css';
 import {Switch , Route} from 'react-router-dom'
 import Navbar from './component/Navbar'
+import MovieSearch from './component/MovieSearch'
+import Pagedetails from './component/Pagedetails'
 
 
 function App() {
@@ -17,12 +19,13 @@ function App() {
         <Route path="/likecounter" component={LikeCounter} />
         <Route path="/likebutton" component={LikeButton} />
         <Route path="/awesomeanimals" component={AwesomeAnimals} />
+        <Route path="/movies" component={MovieSearch}/>
         <Route path="/articleslistapi" component={ARTICLELIST_USEEFFECT} />
         <Route path="/articleslist" component={ArticleList} />
         <Route path="/" component={Scoreboard} />
-
+        <Route path="/movies/:id" component={Pagedetails}/>
+        
         </Switch>
-
 
     </div>
   );

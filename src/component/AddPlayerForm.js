@@ -4,9 +4,6 @@ export default function Addplayer(props) {
 
   const [newplayer, set_newplayer]=useState("");
 
-  function forchange(event){
-    set_newplayer(event.target.value);
-  }
 
   function handel(event) {
     event.preventDefault();
@@ -24,7 +21,7 @@ export default function Addplayer(props) {
       <form onSubmit={handel}>
         Add a player: <input 
         value={newplayer}
-        onChange={forchange}
+        onChange={(event)=> set_newplayer(event.target.value)}
         type="text"
         placeholder="Player's Name"/>
          <button>+ player</button>
