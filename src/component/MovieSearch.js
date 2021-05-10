@@ -7,7 +7,7 @@ function Moviecard(props) {
     <div>
       <h3>{props.title}</h3>
       <img src={props.imgurl} alt={props.alt}/>
-      <Link to={`/movies/${props.movieID}`}> Movies Details</Link>
+      <Link to={`/movies/${props.movieID}`}><button id={props.movieID} title= {props.title}>More details</button></Link>
     </div>
   )
 };

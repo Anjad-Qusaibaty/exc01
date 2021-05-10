@@ -18,12 +18,12 @@ function App() {
         <Switch>
         <Route path="/likecounter" component={LikeCounter} />
         <Route path="/likebutton" component={LikeButton} />
+        <Route path="/movies/:id" component={Pagedetails}/>
         <Route path="/awesomeanimals" component={AwesomeAnimals} />
         <Route path="/movies" component={MovieSearch}/>
         <Route path="/articleslistapi" component={ARTICLELIST_USEEFFECT} />
         <Route path="/articleslist" component={ArticleList} />
         <Route path="/" component={Scoreboard} />
-        <Route path="/movies/:id" component={Pagedetails}/>
         
         </Switch>
 
